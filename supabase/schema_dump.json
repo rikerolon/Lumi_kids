@@ -1,0 +1,3520 @@
+{
+    "rls": [
+        {
+            "t": "tenants",
+            "enabled": true
+        },
+        {
+            "t": "roles",
+            "enabled": true
+        },
+        {
+            "t": "users",
+            "enabled": true
+        },
+        {
+            "t": "user_roles",
+            "enabled": true
+        },
+        {
+            "t": "schools",
+            "enabled": true
+        },
+        {
+            "t": "classrooms",
+            "enabled": true
+        },
+        {
+            "t": "parent_children",
+            "enabled": true
+        },
+        {
+            "t": "professional_profiles",
+            "enabled": true
+        },
+        {
+            "t": "cases",
+            "enabled": true
+        },
+        {
+            "t": "resources",
+            "enabled": true
+        },
+        {
+            "t": "resource_assignments",
+            "enabled": true
+        },
+        {
+            "t": "messages",
+            "enabled": true
+        },
+        {
+            "t": "notifications",
+            "enabled": true
+        },
+        {
+            "t": "case_assignments",
+            "enabled": true
+        },
+        {
+            "t": "interventions",
+            "enabled": true
+        },
+        {
+            "t": "audit_logs",
+            "enabled": true
+        },
+        {
+            "t": "ml_feature_store",
+            "enabled": true
+        },
+        {
+            "t": "openai_usage",
+            "enabled": true
+        },
+        {
+            "t": "emotion_catalog",
+            "enabled": true
+        },
+        {
+            "t": "emotional_states",
+            "enabled": true
+        },
+        {
+            "t": "activities",
+            "enabled": true
+        },
+        {
+            "t": "student_progress",
+            "enabled": true
+        },
+        {
+            "t": "learning_preferences",
+            "enabled": true
+        },
+        {
+            "t": "recommendations",
+            "enabled": true
+        },
+        {
+            "t": "points_ledger",
+            "enabled": true
+        },
+        {
+            "t": "levels",
+            "enabled": true
+        },
+        {
+            "t": "student_levels",
+            "enabled": true
+        },
+        {
+            "t": "badges",
+            "enabled": true
+        },
+        {
+            "t": "student_badges",
+            "enabled": true
+        },
+        {
+            "t": "rewards",
+            "enabled": true
+        },
+        {
+            "t": "virtual_pets",
+            "enabled": true
+        },
+        {
+            "t": "pet_evolution_stages",
+            "enabled": true
+        },
+        {
+            "t": "pet_inventory",
+            "enabled": true
+        },
+        {
+            "t": "emotional_minigames",
+            "enabled": true
+        },
+        {
+            "t": "minigame_results",
+            "enabled": true
+        },
+        {
+            "t": "child_profiles",
+            "enabled": true
+        },
+        {
+            "t": "intervention_reports",
+            "enabled": true
+        },
+        {
+            "t": "reward_redemptions",
+            "enabled": true
+        },
+        {
+            "t": "learning_streaks",
+            "enabled": true
+        },
+        {
+            "t": "alerts",
+            "enabled": true
+        },
+        {
+            "t": "alert_recipients",
+            "enabled": true
+        },
+        {
+            "t": "parental_controls",
+            "enabled": true
+        },
+        {
+            "t": "activity_comments",
+            "enabled": true
+        },
+        {
+            "t": "resource_comments",
+            "enabled": true
+        }
+    ],
+    "roles": null,
+    "columns": [
+        {
+            "c": "id",
+            "t": "activities",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "activities",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "resource_id",
+            "t": "activities",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "title",
+            "t": "activities",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "type",
+            "t": "activities",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "subject",
+            "t": "activities",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "difficulty_level",
+            "t": "activities",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "max_score",
+            "t": "activities",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "estimated_duration_minutes",
+            "t": "activities",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "created_at",
+            "t": "activities",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "activity_comments",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "activity_comments",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "activity_id",
+            "t": "activity_comments",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "author_user_id",
+            "t": "activity_comments",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "body",
+            "t": "activity_comments",
+            "null": "NO",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "created_at",
+            "t": "activity_comments",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "alert_recipients",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "alert_id",
+            "t": "alert_recipients",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "user_id",
+            "t": "alert_recipients",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "notification_id",
+            "t": "alert_recipients",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "acknowledged_at",
+            "t": "alert_recipients",
+            "null": "YES",
+            "type": "timestamp without time zone",
+            "default": null
+        },
+        {
+            "c": "id",
+            "t": "alerts",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "alerts",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "child_user_id",
+            "t": "alerts",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "case_id",
+            "t": "alerts",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "alert_type",
+            "t": "alerts",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "severity",
+            "t": "alerts",
+            "null": "NO",
+            "type": "character varying",
+            "default": "'info'::character varying"
+        },
+        {
+            "c": "title",
+            "t": "alerts",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "description",
+            "t": "alerts",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "triggered_by",
+            "t": "alerts",
+            "null": "YES",
+            "type": "character varying",
+            "default": "'system'::character varying"
+        },
+        {
+            "c": "status",
+            "t": "alerts",
+            "null": "NO",
+            "type": "character varying",
+            "default": "'open'::character varying"
+        },
+        {
+            "c": "created_at",
+            "t": "alerts",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "resolved_at",
+            "t": "alerts",
+            "null": "YES",
+            "type": "timestamp without time zone",
+            "default": null
+        },
+        {
+            "c": "id",
+            "t": "audit_logs",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "audit_logs",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "user_id",
+            "t": "audit_logs",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "action",
+            "t": "audit_logs",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "table_name",
+            "t": "audit_logs",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "record_id",
+            "t": "audit_logs",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "old_value",
+            "t": "audit_logs",
+            "null": "YES",
+            "type": "json",
+            "default": null
+        },
+        {
+            "c": "new_value",
+            "t": "audit_logs",
+            "null": "YES",
+            "type": "json",
+            "default": null
+        },
+        {
+            "c": "ip_address",
+            "t": "audit_logs",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "created_at",
+            "t": "audit_logs",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "badges",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "badges",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "name",
+            "t": "badges",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "description",
+            "t": "badges",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "icon_url",
+            "t": "badges",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "category",
+            "t": "badges",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "criteria",
+            "t": "badges",
+            "null": "YES",
+            "type": "json",
+            "default": null
+        },
+        {
+            "c": "id",
+            "t": "case_assignments",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "case_id",
+            "t": "case_assignments",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "professional_user_id",
+            "t": "case_assignments",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "role_specialty",
+            "t": "case_assignments",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "is_active",
+            "t": "case_assignments",
+            "null": "NO",
+            "type": "boolean",
+            "default": "true"
+        },
+        {
+            "c": "assigned_at",
+            "t": "case_assignments",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "cases",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "cases",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "child_user_id",
+            "t": "cases",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "school_id",
+            "t": "cases",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "title",
+            "t": "cases",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "description",
+            "t": "cases",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "status",
+            "t": "cases",
+            "null": "NO",
+            "type": "character varying",
+            "default": "'open'::character varying"
+        },
+        {
+            "c": "priority",
+            "t": "cases",
+            "null": "YES",
+            "type": "character varying",
+            "default": "'normal'::character varying"
+        },
+        {
+            "c": "opened_by_user_id",
+            "t": "cases",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "opened_at",
+            "t": "cases",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "closed_at",
+            "t": "cases",
+            "null": "YES",
+            "type": "timestamp without time zone",
+            "default": null
+        },
+        {
+            "c": "updated_at",
+            "t": "cases",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "child_profiles",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "user_id",
+            "t": "child_profiles",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "child_profiles",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "school_id",
+            "t": "child_profiles",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "classroom_id",
+            "t": "child_profiles",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "birth_date",
+            "t": "child_profiles",
+            "null": "YES",
+            "type": "date",
+            "default": null
+        },
+        {
+            "c": "guardian_phone",
+            "t": "child_profiles",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "allergies",
+            "t": "child_profiles",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "emergency_contact",
+            "t": "child_profiles",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "updated_at",
+            "t": "child_profiles",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "classrooms",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "school_id",
+            "t": "classrooms",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "name",
+            "t": "classrooms",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "grade_level",
+            "t": "classrooms",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "academic_year",
+            "t": "classrooms",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "created_at",
+            "t": "classrooms",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "emotion_catalog",
+            "null": "NO",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "code",
+            "t": "emotion_catalog",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "name",
+            "t": "emotion_catalog",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "category",
+            "t": "emotion_catalog",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "icon_url",
+            "t": "emotion_catalog",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "color",
+            "t": "emotion_catalog",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "id",
+            "t": "emotional_minigames",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "emotional_minigames",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "name",
+            "t": "emotional_minigames",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "description",
+            "t": "emotional_minigames",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "target_emotion_skill",
+            "t": "emotional_minigames",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "min_age",
+            "t": "emotional_minigames",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "created_at",
+            "t": "emotional_minigames",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "emotional_states",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "emotional_states",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "child_user_id",
+            "t": "emotional_states",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "emotion_id",
+            "t": "emotional_states",
+            "null": "NO",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "intensity",
+            "t": "emotional_states",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "source",
+            "t": "emotional_states",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "recorded_by_user_id",
+            "t": "emotional_states",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "case_id",
+            "t": "emotional_states",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "context_type",
+            "t": "emotional_states",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "context_id",
+            "t": "emotional_states",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "notes",
+            "t": "emotional_states",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "recorded_at",
+            "t": "emotional_states",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "created_at",
+            "t": "emotional_states",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "intervention_reports",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "intervention_id",
+            "t": "intervention_reports",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "summary",
+            "t": "intervention_reports",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "detailed_notes",
+            "t": "intervention_reports",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "mood_rating",
+            "t": "intervention_reports",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "engagement_rating",
+            "t": "intervention_reports",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "progress_notes",
+            "t": "intervention_reports",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "recommendations",
+            "t": "intervention_reports",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "created_at",
+            "t": "intervention_reports",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "interventions",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "interventions",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "case_id",
+            "t": "interventions",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "author_user_id",
+            "t": "interventions",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "session_number",
+            "t": "interventions",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "title",
+            "t": "interventions",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "type",
+            "t": "interventions",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "description",
+            "t": "interventions",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "duration_minutes",
+            "t": "interventions",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "occurred_at",
+            "t": "interventions",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": null
+        },
+        {
+            "c": "location",
+            "t": "interventions",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "status",
+            "t": "interventions",
+            "null": "YES",
+            "type": "character varying",
+            "default": "'completed'::character varying"
+        },
+        {
+            "c": "created_at",
+            "t": "interventions",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "learning_preferences",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "learning_preferences",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "child_user_id",
+            "t": "learning_preferences",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "preferred_subjects",
+            "t": "learning_preferences",
+            "null": "YES",
+            "type": "ARRAY",
+            "default": null
+        },
+        {
+            "c": "interests",
+            "t": "learning_preferences",
+            "null": "YES",
+            "type": "ARRAY",
+            "default": null
+        },
+        {
+            "c": "learning_style",
+            "t": "learning_preferences",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "preferred_difficulty",
+            "t": "learning_preferences",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "updated_at",
+            "t": "learning_preferences",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "child_user_id",
+            "t": "learning_streaks",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "current_streak_days",
+            "t": "learning_streaks",
+            "null": "NO",
+            "type": "integer",
+            "default": "0"
+        },
+        {
+            "c": "longest_streak_days",
+            "t": "learning_streaks",
+            "null": "NO",
+            "type": "integer",
+            "default": "0"
+        },
+        {
+            "c": "last_activity_date",
+            "t": "learning_streaks",
+            "null": "YES",
+            "type": "date",
+            "default": null
+        },
+        {
+            "c": "updated_at",
+            "t": "learning_streaks",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "levels",
+            "null": "NO",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "levels",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "level_number",
+            "t": "levels",
+            "null": "NO",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "name",
+            "t": "levels",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "points_required",
+            "t": "levels",
+            "null": "NO",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "icon_url",
+            "t": "levels",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "id",
+            "t": "messages",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "messages",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "sender_user_id",
+            "t": "messages",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "receiver_user_id",
+            "t": "messages",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "parent_message_id",
+            "t": "messages",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "case_id",
+            "t": "messages",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "subject",
+            "t": "messages",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "body",
+            "t": "messages",
+            "null": "NO",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "is_read",
+            "t": "messages",
+            "null": "NO",
+            "type": "boolean",
+            "default": "false"
+        },
+        {
+            "c": "read_at",
+            "t": "messages",
+            "null": "YES",
+            "type": "timestamp without time zone",
+            "default": null
+        },
+        {
+            "c": "created_at",
+            "t": "messages",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "minigame_results",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "minigame_results",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "child_user_id",
+            "t": "minigame_results",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "minigame_id",
+            "t": "minigame_results",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "score",
+            "t": "minigame_results",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "emotions_detected",
+            "t": "minigame_results",
+            "null": "YES",
+            "type": "json",
+            "default": null
+        },
+        {
+            "c": "duration_seconds",
+            "t": "minigame_results",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "result_summary",
+            "t": "minigame_results",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "played_at",
+            "t": "minigame_results",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "created_at",
+            "t": "minigame_results",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "ml_feature_store",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "ml_feature_store",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "child_user_id",
+            "t": "ml_feature_store",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "case_id",
+            "t": "ml_feature_store",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "feature_date",
+            "t": "ml_feature_store",
+            "null": "NO",
+            "type": "date",
+            "default": null
+        },
+        {
+            "c": "feature_vector",
+            "t": "ml_feature_store",
+            "null": "NO",
+            "type": "json",
+            "default": null
+        },
+        {
+            "c": "target_label",
+            "t": "ml_feature_store",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "prediction_score",
+            "t": "ml_feature_store",
+            "null": "YES",
+            "type": "double precision",
+            "default": null
+        },
+        {
+            "c": "model_version",
+            "t": "ml_feature_store",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "created_at",
+            "t": "ml_feature_store",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "notifications",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "notifications",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "user_id",
+            "t": "notifications",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "type",
+            "t": "notifications",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "title",
+            "t": "notifications",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "content",
+            "t": "notifications",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "link",
+            "t": "notifications",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "is_read",
+            "t": "notifications",
+            "null": "NO",
+            "type": "boolean",
+            "default": "false"
+        },
+        {
+            "c": "created_at",
+            "t": "notifications",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "openai_usage",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "openai_usage",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "user_id",
+            "t": "openai_usage",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "endpoint",
+            "t": "openai_usage",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "model",
+            "t": "openai_usage",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "prompt_tokens",
+            "t": "openai_usage",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "completion_tokens",
+            "t": "openai_usage",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "total_tokens",
+            "t": "openai_usage",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "request_payload",
+            "t": "openai_usage",
+            "null": "YES",
+            "type": "json",
+            "default": null
+        },
+        {
+            "c": "response_payload",
+            "t": "openai_usage",
+            "null": "YES",
+            "type": "json",
+            "default": null
+        },
+        {
+            "c": "response_time_ms",
+            "t": "openai_usage",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "created_at",
+            "t": "openai_usage",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "parent_children",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "parent_children",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "parent_user_id",
+            "t": "parent_children",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "child_user_id",
+            "t": "parent_children",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "relationship_type",
+            "t": "parent_children",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "is_primary_guardian",
+            "t": "parent_children",
+            "null": "NO",
+            "type": "boolean",
+            "default": "false"
+        },
+        {
+            "c": "created_at",
+            "t": "parent_children",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "parental_controls",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "parent_user_id",
+            "t": "parental_controls",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "child_user_id",
+            "t": "parental_controls",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "setting_key",
+            "t": "parental_controls",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "setting_value",
+            "t": "parental_controls",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "updated_at",
+            "t": "parental_controls",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "pet_evolution_stages",
+            "null": "NO",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "species",
+            "t": "pet_evolution_stages",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "stage_number",
+            "t": "pet_evolution_stages",
+            "null": "NO",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "name",
+            "t": "pet_evolution_stages",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "min_experience",
+            "t": "pet_evolution_stages",
+            "null": "NO",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "image_url",
+            "t": "pet_evolution_stages",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "id",
+            "t": "pet_inventory",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "pet_id",
+            "t": "pet_inventory",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "reward_id",
+            "t": "pet_inventory",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "is_equipped",
+            "t": "pet_inventory",
+            "null": "NO",
+            "type": "boolean",
+            "default": "false"
+        },
+        {
+            "c": "acquired_at",
+            "t": "pet_inventory",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "points_ledger",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "points_ledger",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "child_user_id",
+            "t": "points_ledger",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "points",
+            "t": "points_ledger",
+            "null": "NO",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "reason",
+            "t": "points_ledger",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "source_type",
+            "t": "points_ledger",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "source_id",
+            "t": "points_ledger",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "balance_after",
+            "t": "points_ledger",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "created_at",
+            "t": "points_ledger",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "user_id",
+            "t": "professional_profiles",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "professional_profiles",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "school_id",
+            "t": "professional_profiles",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "specialty",
+            "t": "professional_profiles",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "license_number",
+            "t": "professional_profiles",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "bio",
+            "t": "professional_profiles",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "is_available",
+            "t": "professional_profiles",
+            "null": "NO",
+            "type": "boolean",
+            "default": "true"
+        },
+        {
+            "c": "created_at",
+            "t": "professional_profiles",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "recommendations",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "recommendations",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "child_user_id",
+            "t": "recommendations",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "activity_id",
+            "t": "recommendations",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "resource_id",
+            "t": "recommendations",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "reco_type",
+            "t": "recommendations",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "reason",
+            "t": "recommendations",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "score",
+            "t": "recommendations",
+            "null": "YES",
+            "type": "double precision",
+            "default": null
+        },
+        {
+            "c": "model_version",
+            "t": "recommendations",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "status",
+            "t": "recommendations",
+            "null": "NO",
+            "type": "character varying",
+            "default": "'pending'::character varying"
+        },
+        {
+            "c": "shown_at",
+            "t": "recommendations",
+            "null": "YES",
+            "type": "timestamp without time zone",
+            "default": null
+        },
+        {
+            "c": "responded_at",
+            "t": "recommendations",
+            "null": "YES",
+            "type": "timestamp without time zone",
+            "default": null
+        },
+        {
+            "c": "created_at",
+            "t": "recommendations",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "resource_assignments",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "resource_assignments",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "resource_id",
+            "t": "resource_assignments",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "assigned_by_user_id",
+            "t": "resource_assignments",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "assigned_to_user_id",
+            "t": "resource_assignments",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "case_id",
+            "t": "resource_assignments",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "assigned_at",
+            "t": "resource_assignments",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "due_at",
+            "t": "resource_assignments",
+            "null": "YES",
+            "type": "timestamp without time zone",
+            "default": null
+        },
+        {
+            "c": "status",
+            "t": "resource_assignments",
+            "null": "YES",
+            "type": "character varying",
+            "default": "'pending'::character varying"
+        },
+        {
+            "c": "feedback",
+            "t": "resource_assignments",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "id",
+            "t": "resource_comments",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "resource_comments",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "resource_id",
+            "t": "resource_comments",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "author_user_id",
+            "t": "resource_comments",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "body",
+            "t": "resource_comments",
+            "null": "NO",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "created_at",
+            "t": "resource_comments",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "resources",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "resources",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "title",
+            "t": "resources",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "description",
+            "t": "resources",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "type",
+            "t": "resources",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "category",
+            "t": "resources",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "url",
+            "t": "resources",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "content_text",
+            "t": "resources",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "tags",
+            "t": "resources",
+            "null": "YES",
+            "type": "ARRAY",
+            "default": null
+        },
+        {
+            "c": "difficulty_level",
+            "t": "resources",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "is_published",
+            "t": "resources",
+            "null": "NO",
+            "type": "boolean",
+            "default": "false"
+        },
+        {
+            "c": "created_by_user_id",
+            "t": "resources",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "created_at",
+            "t": "resources",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "reward_redemptions",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "child_user_id",
+            "t": "reward_redemptions",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "reward_id",
+            "t": "reward_redemptions",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "status",
+            "t": "reward_redemptions",
+            "null": "NO",
+            "type": "character varying",
+            "default": "'pending'::character varying"
+        },
+        {
+            "c": "redeemed_at",
+            "t": "reward_redemptions",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "rewards",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "rewards",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "name",
+            "t": "rewards",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "description",
+            "t": "rewards",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "cost_points",
+            "t": "rewards",
+            "null": "NO",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "reward_type",
+            "t": "rewards",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "resource_url",
+            "t": "rewards",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "stock",
+            "t": "rewards",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "is_active",
+            "t": "rewards",
+            "null": "NO",
+            "type": "boolean",
+            "default": "true"
+        },
+        {
+            "c": "id",
+            "t": "roles",
+            "null": "NO",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "name",
+            "t": "roles",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "description",
+            "t": "roles",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "id",
+            "t": "schools",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "schools",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "name",
+            "t": "schools",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "address",
+            "t": "schools",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "contact_email",
+            "t": "schools",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "contact_phone",
+            "t": "schools",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "created_at",
+            "t": "schools",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "student_badges",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "child_user_id",
+            "t": "student_badges",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "badge_id",
+            "t": "student_badges",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "earned_at",
+            "t": "student_badges",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "child_user_id",
+            "t": "student_levels",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "current_level_id",
+            "t": "student_levels",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "current_points",
+            "t": "student_levels",
+            "null": "NO",
+            "type": "integer",
+            "default": "0"
+        },
+        {
+            "c": "updated_at",
+            "t": "student_levels",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "student_progress",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "student_progress",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "child_user_id",
+            "t": "student_progress",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "activity_id",
+            "t": "student_progress",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "case_id",
+            "t": "student_progress",
+            "null": "YES",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "status",
+            "t": "student_progress",
+            "null": "NO",
+            "type": "character varying",
+            "default": "'started'::character varying"
+        },
+        {
+            "c": "score",
+            "t": "student_progress",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "max_score",
+            "t": "student_progress",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "difficulty_level_achieved",
+            "t": "student_progress",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "attempts",
+            "t": "student_progress",
+            "null": "NO",
+            "type": "integer",
+            "default": "1"
+        },
+        {
+            "c": "time_spent_seconds",
+            "t": "student_progress",
+            "null": "YES",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "started_at",
+            "t": "student_progress",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "completed_at",
+            "t": "student_progress",
+            "null": "YES",
+            "type": "timestamp without time zone",
+            "default": null
+        },
+        {
+            "c": "created_at",
+            "t": "student_progress",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "tenants",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "name",
+            "t": "tenants",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "subdomain",
+            "t": "tenants",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "config",
+            "t": "tenants",
+            "null": "YES",
+            "type": "json",
+            "default": null
+        },
+        {
+            "c": "logo_url",
+            "t": "tenants",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "is_active",
+            "t": "tenants",
+            "null": "NO",
+            "type": "boolean",
+            "default": "true"
+        },
+        {
+            "c": "created_at",
+            "t": "tenants",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "updated_at",
+            "t": "tenants",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "user_id",
+            "t": "user_roles",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "role_id",
+            "t": "user_roles",
+            "null": "NO",
+            "type": "integer",
+            "default": null
+        },
+        {
+            "c": "is_primary",
+            "t": "user_roles",
+            "null": "NO",
+            "type": "boolean",
+            "default": "false"
+        },
+        {
+            "c": "assigned_at",
+            "t": "user_roles",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "users",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "users",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "email",
+            "t": "users",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "password_hash",
+            "t": "users",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "full_name",
+            "t": "users",
+            "null": "NO",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "phone",
+            "t": "users",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "avatar_url",
+            "t": "users",
+            "null": "YES",
+            "type": "text",
+            "default": null
+        },
+        {
+            "c": "is_active",
+            "t": "users",
+            "null": "NO",
+            "type": "boolean",
+            "default": "true"
+        },
+        {
+            "c": "last_login_at",
+            "t": "users",
+            "null": "YES",
+            "type": "timestamp without time zone",
+            "default": null
+        },
+        {
+            "c": "created_at",
+            "t": "users",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "updated_at",
+            "t": "users",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "id",
+            "t": "virtual_pets",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "tenant_id",
+            "t": "virtual_pets",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "child_user_id",
+            "t": "virtual_pets",
+            "null": "NO",
+            "type": "bigint",
+            "default": null
+        },
+        {
+            "c": "name",
+            "t": "virtual_pets",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "species",
+            "t": "virtual_pets",
+            "null": "YES",
+            "type": "character varying",
+            "default": null
+        },
+        {
+            "c": "evolution_stage",
+            "t": "virtual_pets",
+            "null": "NO",
+            "type": "integer",
+            "default": "1"
+        },
+        {
+            "c": "experience_points",
+            "t": "virtual_pets",
+            "null": "NO",
+            "type": "integer",
+            "default": "0"
+        },
+        {
+            "c": "happiness",
+            "t": "virtual_pets",
+            "null": "YES",
+            "type": "integer",
+            "default": "100"
+        },
+        {
+            "c": "is_active",
+            "t": "virtual_pets",
+            "null": "NO",
+            "type": "boolean",
+            "default": "true"
+        },
+        {
+            "c": "created_at",
+            "t": "virtual_pets",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        },
+        {
+            "c": "updated_at",
+            "t": "virtual_pets",
+            "null": "NO",
+            "type": "timestamp without time zone",
+            "default": "now()"
+        }
+    ],
+    "policies": null,
+    "triggers": null,
+    "functions": null,
+    "constraints": [
+        {
+            "t": "activities",
+            "def": "PRIMARY KEY (id)",
+            "name": "activities_pkey"
+        },
+        {
+            "t": "activities",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "activities_tenant_id_fkey"
+        },
+        {
+            "t": "activities",
+            "def": "FOREIGN KEY (resource_id) REFERENCES resources(id) ON DELETE SET NULL",
+            "name": "activities_resource_id_fkey"
+        },
+        {
+            "t": "activity_comments",
+            "def": "FOREIGN KEY (author_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "activity_comments_author_user_id_fkey"
+        },
+        {
+            "t": "activity_comments",
+            "def": "PRIMARY KEY (id)",
+            "name": "activity_comments_pkey"
+        },
+        {
+            "t": "activity_comments",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "activity_comments_tenant_id_fkey"
+        },
+        {
+            "t": "activity_comments",
+            "def": "FOREIGN KEY (activity_id) REFERENCES activities(id) ON DELETE CASCADE",
+            "name": "activity_comments_activity_id_fkey"
+        },
+        {
+            "t": "alert_recipients",
+            "def": "FOREIGN KEY (alert_id) REFERENCES alerts(id) ON DELETE CASCADE",
+            "name": "alert_recipients_alert_id_fkey"
+        },
+        {
+            "t": "alert_recipients",
+            "def": "PRIMARY KEY (id)",
+            "name": "alert_recipients_pkey"
+        },
+        {
+            "t": "alert_recipients",
+            "def": "FOREIGN KEY (notification_id) REFERENCES notifications(id) ON DELETE SET NULL",
+            "name": "alert_recipients_notification_id_fkey"
+        },
+        {
+            "t": "alert_recipients",
+            "def": "FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "alert_recipients_user_id_fkey"
+        },
+        {
+            "t": "alerts",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "alerts_tenant_id_fkey"
+        },
+        {
+            "t": "alerts",
+            "def": "PRIMARY KEY (id)",
+            "name": "alerts_pkey"
+        },
+        {
+            "t": "alerts",
+            "def": "FOREIGN KEY (case_id) REFERENCES cases(id) ON DELETE SET NULL",
+            "name": "alerts_case_id_fkey"
+        },
+        {
+            "t": "alerts",
+            "def": "FOREIGN KEY (child_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "alerts_child_user_id_fkey"
+        },
+        {
+            "t": "audit_logs",
+            "def": "PRIMARY KEY (id)",
+            "name": "audit_logs_pkey"
+        },
+        {
+            "t": "audit_logs",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "audit_logs_tenant_id_fkey"
+        },
+        {
+            "t": "audit_logs",
+            "def": "FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL",
+            "name": "audit_logs_user_id_fkey"
+        },
+        {
+            "t": "badges",
+            "def": "PRIMARY KEY (id)",
+            "name": "badges_pkey"
+        },
+        {
+            "t": "badges",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "badges_tenant_id_fkey"
+        },
+        {
+            "t": "case_assignments",
+            "def": "FOREIGN KEY (professional_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "case_assignments_professional_user_id_fkey"
+        },
+        {
+            "t": "case_assignments",
+            "def": "PRIMARY KEY (id)",
+            "name": "case_assignments_pkey"
+        },
+        {
+            "t": "case_assignments",
+            "def": "FOREIGN KEY (case_id) REFERENCES cases(id) ON DELETE CASCADE",
+            "name": "case_assignments_case_id_fkey"
+        },
+        {
+            "t": "cases",
+            "def": "FOREIGN KEY (school_id) REFERENCES schools(id) ON DELETE SET NULL",
+            "name": "cases_school_id_fkey"
+        },
+        {
+            "t": "cases",
+            "def": "PRIMARY KEY (id)",
+            "name": "cases_pkey"
+        },
+        {
+            "t": "cases",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "cases_tenant_id_fkey"
+        },
+        {
+            "t": "cases",
+            "def": "FOREIGN KEY (child_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "cases_child_user_id_fkey"
+        },
+        {
+            "t": "cases",
+            "def": "FOREIGN KEY (opened_by_user_id) REFERENCES users(id) ON DELETE SET NULL",
+            "name": "cases_opened_by_user_id_fkey"
+        },
+        {
+            "t": "child_profiles",
+            "def": "FOREIGN KEY (classroom_id) REFERENCES classrooms(id) ON DELETE SET NULL",
+            "name": "child_profiles_classroom_id_fkey"
+        },
+        {
+            "t": "child_profiles",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "child_profiles_tenant_id_fkey"
+        },
+        {
+            "t": "child_profiles",
+            "def": "UNIQUE (user_id)",
+            "name": "child_profiles_user_id_key"
+        },
+        {
+            "t": "child_profiles",
+            "def": "FOREIGN KEY (school_id) REFERENCES schools(id) ON DELETE SET NULL",
+            "name": "child_profiles_school_id_fkey"
+        },
+        {
+            "t": "child_profiles",
+            "def": "FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "child_profiles_user_id_fkey"
+        },
+        {
+            "t": "child_profiles",
+            "def": "PRIMARY KEY (id)",
+            "name": "child_profiles_pkey"
+        },
+        {
+            "t": "classrooms",
+            "def": "PRIMARY KEY (id)",
+            "name": "classrooms_pkey"
+        },
+        {
+            "t": "classrooms",
+            "def": "FOREIGN KEY (school_id) REFERENCES schools(id) ON DELETE CASCADE",
+            "name": "classrooms_school_id_fkey"
+        },
+        {
+            "t": "emotion_catalog",
+            "def": "UNIQUE (code)",
+            "name": "emotion_catalog_code_key"
+        },
+        {
+            "t": "emotion_catalog",
+            "def": "PRIMARY KEY (id)",
+            "name": "emotion_catalog_pkey"
+        },
+        {
+            "t": "emotional_minigames",
+            "def": "PRIMARY KEY (id)",
+            "name": "emotional_minigames_pkey"
+        },
+        {
+            "t": "emotional_minigames",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "emotional_minigames_tenant_id_fkey"
+        },
+        {
+            "t": "emotional_states",
+            "def": "FOREIGN KEY (recorded_by_user_id) REFERENCES users(id) ON DELETE SET NULL",
+            "name": "emotional_states_recorded_by_user_id_fkey"
+        },
+        {
+            "t": "emotional_states",
+            "def": "FOREIGN KEY (case_id) REFERENCES cases(id) ON DELETE SET NULL",
+            "name": "emotional_states_case_id_fkey"
+        },
+        {
+            "t": "emotional_states",
+            "def": "FOREIGN KEY (child_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "emotional_states_child_user_id_fkey"
+        },
+        {
+            "t": "emotional_states",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "emotional_states_tenant_id_fkey"
+        },
+        {
+            "t": "emotional_states",
+            "def": "PRIMARY KEY (id)",
+            "name": "emotional_states_pkey"
+        },
+        {
+            "t": "emotional_states",
+            "def": "FOREIGN KEY (emotion_id) REFERENCES emotion_catalog(id) ON DELETE RESTRICT",
+            "name": "emotional_states_emotion_id_fkey"
+        },
+        {
+            "t": "emotional_states",
+            "def": "CHECK (((intensity >= 1) AND (intensity <= 5)))",
+            "name": "emotional_states_intensity_check"
+        },
+        {
+            "t": "intervention_reports",
+            "def": "PRIMARY KEY (id)",
+            "name": "intervention_reports_pkey"
+        },
+        {
+            "t": "intervention_reports",
+            "def": "FOREIGN KEY (intervention_id) REFERENCES interventions(id) ON DELETE CASCADE",
+            "name": "intervention_reports_intervention_id_fkey"
+        },
+        {
+            "t": "interventions",
+            "def": "FOREIGN KEY (case_id) REFERENCES cases(id) ON DELETE CASCADE",
+            "name": "interventions_case_id_fkey"
+        },
+        {
+            "t": "interventions",
+            "def": "PRIMARY KEY (id)",
+            "name": "interventions_pkey"
+        },
+        {
+            "t": "interventions",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "interventions_tenant_id_fkey"
+        },
+        {
+            "t": "interventions",
+            "def": "FOREIGN KEY (author_user_id) REFERENCES users(id) ON DELETE SET NULL",
+            "name": "interventions_author_user_id_fkey"
+        },
+        {
+            "t": "learning_preferences",
+            "def": "UNIQUE (child_user_id)",
+            "name": "learning_preferences_child_user_id_key"
+        },
+        {
+            "t": "learning_preferences",
+            "def": "PRIMARY KEY (id)",
+            "name": "learning_preferences_pkey"
+        },
+        {
+            "t": "learning_preferences",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "learning_preferences_tenant_id_fkey"
+        },
+        {
+            "t": "learning_preferences",
+            "def": "FOREIGN KEY (child_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "learning_preferences_child_user_id_fkey"
+        },
+        {
+            "t": "learning_streaks",
+            "def": "FOREIGN KEY (child_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "learning_streaks_child_user_id_fkey"
+        },
+        {
+            "t": "learning_streaks",
+            "def": "PRIMARY KEY (child_user_id)",
+            "name": "learning_streaks_pkey"
+        },
+        {
+            "t": "levels",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "levels_tenant_id_fkey"
+        },
+        {
+            "t": "levels",
+            "def": "PRIMARY KEY (id)",
+            "name": "levels_pkey"
+        },
+        {
+            "t": "levels",
+            "def": "UNIQUE (tenant_id, level_number)",
+            "name": "levels_tenant_id_level_number_key"
+        },
+        {
+            "t": "messages",
+            "def": "FOREIGN KEY (case_id) REFERENCES cases(id) ON DELETE SET NULL",
+            "name": "messages_case_id_fkey"
+        },
+        {
+            "t": "messages",
+            "def": "PRIMARY KEY (id)",
+            "name": "messages_pkey"
+        },
+        {
+            "t": "messages",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "messages_tenant_id_fkey"
+        },
+        {
+            "t": "messages",
+            "def": "FOREIGN KEY (sender_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "messages_sender_user_id_fkey"
+        },
+        {
+            "t": "messages",
+            "def": "FOREIGN KEY (receiver_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "messages_receiver_user_id_fkey"
+        },
+        {
+            "t": "messages",
+            "def": "FOREIGN KEY (parent_message_id) REFERENCES messages(id) ON DELETE SET NULL",
+            "name": "messages_parent_message_id_fkey"
+        },
+        {
+            "t": "minigame_results",
+            "def": "FOREIGN KEY (child_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "minigame_results_child_user_id_fkey"
+        },
+        {
+            "t": "minigame_results",
+            "def": "FOREIGN KEY (minigame_id) REFERENCES emotional_minigames(id) ON DELETE CASCADE",
+            "name": "minigame_results_minigame_id_fkey"
+        },
+        {
+            "t": "minigame_results",
+            "def": "PRIMARY KEY (id)",
+            "name": "minigame_results_pkey"
+        },
+        {
+            "t": "minigame_results",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "minigame_results_tenant_id_fkey"
+        },
+        {
+            "t": "ml_feature_store",
+            "def": "FOREIGN KEY (child_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "ml_feature_store_child_user_id_fkey"
+        },
+        {
+            "t": "ml_feature_store",
+            "def": "FOREIGN KEY (case_id) REFERENCES cases(id) ON DELETE SET NULL",
+            "name": "ml_feature_store_case_id_fkey"
+        },
+        {
+            "t": "ml_feature_store",
+            "def": "PRIMARY KEY (id)",
+            "name": "ml_feature_store_pkey"
+        },
+        {
+            "t": "ml_feature_store",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "ml_feature_store_tenant_id_fkey"
+        },
+        {
+            "t": "notifications",
+            "def": "FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "notifications_user_id_fkey"
+        },
+        {
+            "t": "notifications",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "notifications_tenant_id_fkey"
+        },
+        {
+            "t": "notifications",
+            "def": "PRIMARY KEY (id)",
+            "name": "notifications_pkey"
+        },
+        {
+            "t": "openai_usage",
+            "def": "PRIMARY KEY (id)",
+            "name": "openai_usage_pkey"
+        },
+        {
+            "t": "openai_usage",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "openai_usage_tenant_id_fkey"
+        },
+        {
+            "t": "openai_usage",
+            "def": "FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL",
+            "name": "openai_usage_user_id_fkey"
+        },
+        {
+            "t": "parent_children",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "parent_children_tenant_id_fkey"
+        },
+        {
+            "t": "parent_children",
+            "def": "FOREIGN KEY (parent_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "parent_children_parent_user_id_fkey"
+        },
+        {
+            "t": "parent_children",
+            "def": "PRIMARY KEY (id)",
+            "name": "parent_children_pkey"
+        },
+        {
+            "t": "parent_children",
+            "def": "UNIQUE (parent_user_id, child_user_id)",
+            "name": "parent_children_parent_user_id_child_user_id_key"
+        },
+        {
+            "t": "parent_children",
+            "def": "FOREIGN KEY (child_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "parent_children_child_user_id_fkey"
+        },
+        {
+            "t": "parental_controls",
+            "def": "FOREIGN KEY (parent_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "parental_controls_parent_user_id_fkey"
+        },
+        {
+            "t": "parental_controls",
+            "def": "FOREIGN KEY (child_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "parental_controls_child_user_id_fkey"
+        },
+        {
+            "t": "parental_controls",
+            "def": "UNIQUE (parent_user_id, child_user_id, setting_key)",
+            "name": "parental_controls_parent_user_id_child_user_id_setting_key_key"
+        },
+        {
+            "t": "parental_controls",
+            "def": "PRIMARY KEY (id)",
+            "name": "parental_controls_pkey"
+        },
+        {
+            "t": "pet_evolution_stages",
+            "def": "PRIMARY KEY (id)",
+            "name": "pet_evolution_stages_pkey"
+        },
+        {
+            "t": "pet_evolution_stages",
+            "def": "UNIQUE (species, stage_number)",
+            "name": "pet_evolution_stages_species_stage_number_key"
+        },
+        {
+            "t": "pet_inventory",
+            "def": "FOREIGN KEY (reward_id) REFERENCES rewards(id) ON DELETE CASCADE",
+            "name": "pet_inventory_reward_id_fkey"
+        },
+        {
+            "t": "pet_inventory",
+            "def": "PRIMARY KEY (id)",
+            "name": "pet_inventory_pkey"
+        },
+        {
+            "t": "pet_inventory",
+            "def": "FOREIGN KEY (pet_id) REFERENCES virtual_pets(id) ON DELETE CASCADE",
+            "name": "pet_inventory_pet_id_fkey"
+        },
+        {
+            "t": "points_ledger",
+            "def": "FOREIGN KEY (child_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "points_ledger_child_user_id_fkey"
+        },
+        {
+            "t": "points_ledger",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "points_ledger_tenant_id_fkey"
+        },
+        {
+            "t": "points_ledger",
+            "def": "PRIMARY KEY (id)",
+            "name": "points_ledger_pkey"
+        },
+        {
+            "t": "professional_profiles",
+            "def": "FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "professional_profiles_user_id_fkey"
+        },
+        {
+            "t": "professional_profiles",
+            "def": "FOREIGN KEY (school_id) REFERENCES schools(id) ON DELETE SET NULL",
+            "name": "professional_profiles_school_id_fkey"
+        },
+        {
+            "t": "professional_profiles",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "professional_profiles_tenant_id_fkey"
+        },
+        {
+            "t": "professional_profiles",
+            "def": "PRIMARY KEY (user_id)",
+            "name": "professional_profiles_pkey"
+        },
+        {
+            "t": "recommendations",
+            "def": "FOREIGN KEY (activity_id) REFERENCES activities(id) ON DELETE CASCADE",
+            "name": "recommendations_activity_id_fkey"
+        },
+        {
+            "t": "recommendations",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "recommendations_tenant_id_fkey"
+        },
+        {
+            "t": "recommendations",
+            "def": "PRIMARY KEY (id)",
+            "name": "recommendations_pkey"
+        },
+        {
+            "t": "recommendations",
+            "def": "FOREIGN KEY (child_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "recommendations_child_user_id_fkey"
+        },
+        {
+            "t": "recommendations",
+            "def": "FOREIGN KEY (resource_id) REFERENCES resources(id) ON DELETE CASCADE",
+            "name": "recommendations_resource_id_fkey"
+        },
+        {
+            "t": "resource_assignments",
+            "def": "FOREIGN KEY (case_id) REFERENCES cases(id) ON DELETE SET NULL",
+            "name": "resource_assignments_case_id_fkey"
+        },
+        {
+            "t": "resource_assignments",
+            "def": "FOREIGN KEY (assigned_to_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "resource_assignments_assigned_to_user_id_fkey"
+        },
+        {
+            "t": "resource_assignments",
+            "def": "FOREIGN KEY (assigned_by_user_id) REFERENCES users(id) ON DELETE SET NULL",
+            "name": "resource_assignments_assigned_by_user_id_fkey"
+        },
+        {
+            "t": "resource_assignments",
+            "def": "FOREIGN KEY (resource_id) REFERENCES resources(id) ON DELETE CASCADE",
+            "name": "resource_assignments_resource_id_fkey"
+        },
+        {
+            "t": "resource_assignments",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "resource_assignments_tenant_id_fkey"
+        },
+        {
+            "t": "resource_assignments",
+            "def": "PRIMARY KEY (id)",
+            "name": "resource_assignments_pkey"
+        },
+        {
+            "t": "resource_comments",
+            "def": "FOREIGN KEY (author_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "resource_comments_author_user_id_fkey"
+        },
+        {
+            "t": "resource_comments",
+            "def": "FOREIGN KEY (resource_id) REFERENCES resources(id) ON DELETE CASCADE",
+            "name": "resource_comments_resource_id_fkey"
+        },
+        {
+            "t": "resource_comments",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "resource_comments_tenant_id_fkey"
+        },
+        {
+            "t": "resource_comments",
+            "def": "PRIMARY KEY (id)",
+            "name": "resource_comments_pkey"
+        },
+        {
+            "t": "resources",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "resources_tenant_id_fkey"
+        },
+        {
+            "t": "resources",
+            "def": "PRIMARY KEY (id)",
+            "name": "resources_pkey"
+        },
+        {
+            "t": "resources",
+            "def": "FOREIGN KEY (created_by_user_id) REFERENCES users(id) ON DELETE SET NULL",
+            "name": "resources_created_by_user_id_fkey"
+        },
+        {
+            "t": "reward_redemptions",
+            "def": "PRIMARY KEY (id)",
+            "name": "reward_redemptions_pkey"
+        },
+        {
+            "t": "reward_redemptions",
+            "def": "FOREIGN KEY (child_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "reward_redemptions_child_user_id_fkey"
+        },
+        {
+            "t": "reward_redemptions",
+            "def": "FOREIGN KEY (reward_id) REFERENCES rewards(id) ON DELETE CASCADE",
+            "name": "reward_redemptions_reward_id_fkey"
+        },
+        {
+            "t": "rewards",
+            "def": "PRIMARY KEY (id)",
+            "name": "rewards_pkey"
+        },
+        {
+            "t": "rewards",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "rewards_tenant_id_fkey"
+        },
+        {
+            "t": "roles",
+            "def": "UNIQUE (name)",
+            "name": "roles_name_key"
+        },
+        {
+            "t": "roles",
+            "def": "PRIMARY KEY (id)",
+            "name": "roles_pkey"
+        },
+        {
+            "t": "schools",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "schools_tenant_id_fkey"
+        },
+        {
+            "t": "schools",
+            "def": "PRIMARY KEY (id)",
+            "name": "schools_pkey"
+        },
+        {
+            "t": "student_badges",
+            "def": "PRIMARY KEY (id)",
+            "name": "student_badges_pkey"
+        },
+        {
+            "t": "student_badges",
+            "def": "UNIQUE (child_user_id, badge_id)",
+            "name": "student_badges_child_user_id_badge_id_key"
+        },
+        {
+            "t": "student_badges",
+            "def": "FOREIGN KEY (badge_id) REFERENCES badges(id) ON DELETE CASCADE",
+            "name": "student_badges_badge_id_fkey"
+        },
+        {
+            "t": "student_badges",
+            "def": "FOREIGN KEY (child_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "student_badges_child_user_id_fkey"
+        },
+        {
+            "t": "student_levels",
+            "def": "FOREIGN KEY (child_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "student_levels_child_user_id_fkey"
+        },
+        {
+            "t": "student_levels",
+            "def": "PRIMARY KEY (child_user_id)",
+            "name": "student_levels_pkey"
+        },
+        {
+            "t": "student_levels",
+            "def": "FOREIGN KEY (current_level_id) REFERENCES levels(id) ON DELETE SET NULL",
+            "name": "student_levels_current_level_id_fkey"
+        },
+        {
+            "t": "student_progress",
+            "def": "FOREIGN KEY (child_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "student_progress_child_user_id_fkey"
+        },
+        {
+            "t": "student_progress",
+            "def": "FOREIGN KEY (activity_id) REFERENCES activities(id) ON DELETE CASCADE",
+            "name": "student_progress_activity_id_fkey"
+        },
+        {
+            "t": "student_progress",
+            "def": "PRIMARY KEY (id)",
+            "name": "student_progress_pkey"
+        },
+        {
+            "t": "student_progress",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "student_progress_tenant_id_fkey"
+        },
+        {
+            "t": "student_progress",
+            "def": "FOREIGN KEY (case_id) REFERENCES cases(id) ON DELETE SET NULL",
+            "name": "student_progress_case_id_fkey"
+        },
+        {
+            "t": "tenants",
+            "def": "PRIMARY KEY (id)",
+            "name": "tenants_pkey"
+        },
+        {
+            "t": "tenants",
+            "def": "UNIQUE (subdomain)",
+            "name": "tenants_subdomain_key"
+        },
+        {
+            "t": "user_roles",
+            "def": "FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "user_roles_user_id_fkey"
+        },
+        {
+            "t": "user_roles",
+            "def": "PRIMARY KEY (user_id, role_id)",
+            "name": "user_roles_pkey"
+        },
+        {
+            "t": "user_roles",
+            "def": "FOREIGN KEY (role_id) REFERENCES roles(id) ON DELETE RESTRICT",
+            "name": "user_roles_role_id_fkey"
+        },
+        {
+            "t": "users",
+            "def": "UNIQUE (tenant_id, email)",
+            "name": "users_tenant_id_email_key"
+        },
+        {
+            "t": "users",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "users_tenant_id_fkey"
+        },
+        {
+            "t": "users",
+            "def": "PRIMARY KEY (id)",
+            "name": "users_pkey"
+        },
+        {
+            "t": "virtual_pets",
+            "def": "CHECK (((happiness >= 0) AND (happiness <= 100)))",
+            "name": "virtual_pets_happiness_check"
+        },
+        {
+            "t": "virtual_pets",
+            "def": "PRIMARY KEY (id)",
+            "name": "virtual_pets_pkey"
+        },
+        {
+            "t": "virtual_pets",
+            "def": "FOREIGN KEY (child_user_id) REFERENCES users(id) ON DELETE CASCADE",
+            "name": "virtual_pets_child_user_id_fkey"
+        },
+        {
+            "t": "virtual_pets",
+            "def": "FOREIGN KEY (tenant_id) REFERENCES tenants(id) ON DELETE CASCADE",
+            "name": "virtual_pets_tenant_id_fkey"
+        }
+    ]
+}
